@@ -1,0 +1,872 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    background-color: #f1eded;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+}
+
+h1{
+    font-size: 50px;
+    line-height: 66px;
+    color: #0e0e0e;
+    font-family: 'Roboto', sans-serif;
+}
+
+h2{
+    font-size: 46px;
+    line-height: 54px;
+    color: #000000;
+
+
+}
+
+h3{
+    font-size: 20px;
+    color: #615353;
+}
+
+h4{
+    font-size: 20px;
+    line-height: 39px;
+    color: #070000;
+}
+
+h6{
+    font-weight: 700;
+    font-size: 12px;
+}
+
+p{
+    font-size: 16px;
+    color: #070000;
+    margin: 15px 0 20px 0;
+}
+
+.section-p1{
+    padding: 40px 80px;
+}
+
+.section-m1{
+    padding: 40px 0;
+}
+
+.body1{
+    width: 100%;
+}
+
+/* Header Start */
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px;
+    background: #d8cbcb;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    font-family: 'Square Peg', cursive;
+}
+
+#header h2{
+    line-height: 19px;
+    color: #615353;
+    font-family: 'Permanent Marker', cursive;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active{
+    color: #615353;
+}
+
+
+/* Home Page */
+#hero {
+    background-image: url("Images/coverDog.gif");
+    height: 110vh;
+    width: 100%;
+    background-size: cover;
+    /* background-position: top 5% right 0; */
+    /* padding: 0 20px; */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    text-align: center;
+   
+}
+
+
+
+.hero-text{
+    padding: 8px;
+    background: linear-gradient(135deg, rgba(20, 14, 14, 0.8), transparent);
+    backdrop-filter: blur(8px);
+}
+
+#hero h2, h3, h4 {
+    color: #b68d8d;
+}
+
+#hero h3{
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.adopt h1{
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 40px;
+    text-align: center;
+}
+
+.adopt h3{
+    padding: 20px 20px 70px;
+    text-align: center;
+}
+
+
+.pets-container {
+    margin-top: 70px;
+    margin-bottom: 0;
+    text-align: center;
+    padding-top: 20px;
+}
+.pets-directory {
+    padding-top: 100px;
+    padding-bottom: 20px;
+}
+.pets-directory h3{
+    padding-top: 30px;
+    padding-bottom: 70px;
+    font-size: 30px;
+    color: #6d5b5b;
+}
+
+.pets-container {
+    margin-top: -70px;
+    margin-bottom: 0;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    text-align: center;
+}
+
+.pets-grid {
+    display: -ms-grid;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+    grid-template-areas: "Area Area-2 Area-3";
+    -ms-grid-columns: 1fr 40px 1fr 40px 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: auto 40px auto 40px auto;
+    grid-template-rows: auto auto auto;
+    text-align: left;
+    /* margin-left: 60px; */
+}
+
+.pet-div{
+    position: relative;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    /* align-items: center; */
+    text-align: center;
+}
+
+.pet-div button{
+    align-items: center;
+}
+
+.pet-card {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 100%;
+    border-radius: 0;
+
+}
+
+.pet-image {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    /* width: 460px; */
+    height: 100%;
+    max-width: none;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: 50% 50%;
+    object-position: 50% 50%;
+    float: left;
+    
+}
+
+
+
+.pet-image.forever {
+    height: 130%;
+}
+
+.pet-name {
+    font-size: 35px;
+    line-height: 1.4;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+}
+
+.pet-description {
+    font-size: 18px;
+    text-align: justify;
+    padding-top: 12px;
+    margin: 15px 15px 90px 15px;
+
+}
+
+
+/* mbaron pjesa e adoptoni */
+
+
+/* ketu fillon pjesa e kontaktoni */
+
+
+main
+{
+    display: flex;
+    padding-top: 40px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
+}
+
+.title
+{
+    font-size: 80px;
+    font-weight: bold;
+    padding: 1.5% 0;
+    font-family: 'Square Peg', cursive;
+}
+
+.title-info
+{
+    padding-bottom: 2%;
+}
+
+.contact h3{
+    color: #615353;
+}
+
+.form .input-group,
+.form .textarea-group,
+.form .adopt-group1 {
+    margin-bottom: 12px;
+    position: relative;
+    
+}
+
+.input-group input,
+.textarea-group textarea,
+.adopt-group1 select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #f9f9f9;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.input-group label,
+.textarea-group label {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #fff;
+    padding: 0 5px;
+    color: #666;
+    font-size: 14px;
+    pointer-events: none;
+    transition: all 0.2s ease;
+}
+
+.input-group input:focus + label,
+.input-group input:not(:placeholder-shown) + label,
+.textarea-group textarea:focus + label,
+.textarea-group textarea:not(:placeholder-shown) + label {
+    top: -10px;
+    left: 10px;
+    color: #333;
+    font-size: 12px;
+    padding: 10px;
+}
+
+.button-contact {
+    display: block;
+    width: 33%;
+    padding: 10px 0;
+    border: none;
+    background-color: #d8cbcb;
+    color: inherit;
+    box-shadow: 0 0 10px #212121;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button-contact:hover {
+    background-color: #424242;
+    color: #ecd5d5;
+    cursor: pointer;
+}
+
+.adopt-group1{
+    padding-top: 9px;
+}
+
+#adopt-group1{
+    width: 40%;
+    height: 40px;
+}
+
+h5{
+    padding-top: 12px;
+    font-size: 29px;
+    color: black;
+    /* font-family: 'Roboto', sans-serif;
+    font-family: 'Square Peg', cursive; */
+
+}
+
+
+
+input, textarea
+{
+    color: inherit;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #757575;
+    padding: 1.5%;
+    font-size: 20px;
+}
+
+input:focus, textarea:focus
+{
+    background-color: transparent;
+    outline: transparent;
+    border-bottom: 2px solid #6d5b5b;
+}
+
+input::placeholder, textarea::placeholder
+{
+    color: transparent;
+}
+
+label
+{
+    color: #615353;
+    position: relative;
+    left: 0.5em;
+    top: -2em;
+    cursor: auto;
+    transition: 0.3s ease all;
+}
+
+input:focus ~ label, input:not(:placeholder-shown) ~ label
+{
+    top: -4em;
+    color: #615353;
+    font-size: 15px;
+}
+
+textarea:focus ~ label, textarea:not(:placeholder-shown) ~ label
+{
+    top: -10.5em;
+    color: #6d5b5b;
+    font-size: 15px;
+}
+
+.button-div
+{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+button
+{
+    
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    width: 80%; /* Ajustez la largeur selon vos besoins */
+    border: 1px solid #212121;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 18px;
+    background-color: #d8cbcb;
+    color: inherit;
+    box-shadow: 0 0 10px #212121;
+
+}
+
+button:hover
+{
+    background-color: #424242;
+    color: #ecd5d5;
+    cursor: pointer;
+}
+
+/* mbaron kontaktoni */
+
+
+/* Media queries */
+
+@media screen and (max-width: 1200px)
+{
+    .form
+    {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 680px)
+{
+    .form
+    {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 500px)
+{
+    .title
+    {
+        font-size: 40px;
+        padding-top: 6%;
+    }
+
+    .title-info
+    {
+        font-size: 13px;
+    }
+
+    .form
+    {
+        padding: 15% 4% 6%;
+    }
+
+    .input-group, .textarea-group
+    {
+        padding: 3% 0;
+    }
+
+    input, textarea
+    {
+        font-size: 15px;
+    }
+
+    input:focus ~ label, input:not(:placeholder-shown) ~ label
+    {
+        top: -3.5em;
+        left: 0.1em;
+    }
+
+    textarea:focus ~ label, textarea:not(:placeholder-shown) ~ label
+    {
+        top: -8.5em;
+        left: 0.2em;
+    }
+
+    button
+    {
+        font-size: 15px;
+    }
+}
+
+/* footer fillon ketu */
+
+
+footer {
+    background-color: #d8cbcb;
+    padding: 3rem;
+
+}
+
+.footer-col {
+    width: calc((100% - 2rem) / 2);
+    float: left;
+}
+
+.footer-col:not(:last-child) {
+    margin-right: 2rem;
+}
+
+.footer-nav {
+    list-style-type: none;
+    float: left;
+}
+
+.footer-nav p {
+    font-size: 100%;
+    margin-bottom: 0;
+    font-family: monospace;
+}
+
+.social-links {
+    list-style-type: none;
+    float: right;
+
+}
+
+.social-links li {
+    display: inline-block;
+    margin-right: 2rem;
+    font-size: 23px;
+}
+
+.social-links li:last-child {
+    margin-right: 0;
+}
+
+.social-links i {
+    text-decoration: none;
+    border: 0;
+    color: #888;
+    transition: color 0.2s;
+    -webkit-transition: color 0.2s;
+}
+
+
+.social-links li a:link,
+.social-links li a:visited {
+    font-size: 100%;
+}
+
+.fa-facebook {
+    transition: color 0.2s;
+    -webkit-transition: color 0.2s;
+}
+
+.fa-facebook:hover, .fa-instagram:hover, .fa-youtube:hover {
+    color: white;
+}
+
+/* footer mbaron ketu  */
+
+/* ketu fillon about us */
+
+.about-title h1{
+    padding-top: 90px;
+    text-align: center;
+    font-style: oblique;
+    color: black;
+}
+
+.column{
+    float: left;
+    width: 33%;
+    padding: 20px 50px;
+    flex: 25%;
+}
+
+
+.column p{
+    padding-top: 20px;
+    margin: 15px;
+    font-size: 22px;
+    font-style: oblique;
+    /*text-align: justify;*/
+    color: black;
+    font-family: fantasy;
+}
+.column img {
+    width: 100%;
+    height: auto;
+}
+
+.column h4 {
+    font-size: 24px;
+    padding-top: 45px;
+    padding-bottom: 10px;
+    font-family: monospace;
+}
+
+
+.maincontent {
+    background-color: white;
+    opacity: 0.8;
+    width: 100%;
+    position: absolute;
+    font-size: 20px;
+    font-style: oblique;
+    font-weight: bold;
+}
+
+.maincontent h2{
+    font-size: 35px;
+    align-items: center;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.maincontent p{
+    font-size: 19px;
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.p-contact-about{
+    align-items: center;
+    text-align: center;
+    padding: 35px ;
+}
+
+/* submit fillon ketu */
+
+.gif {
+    text-align: center;
+    width: 50%;
+    height: 300px;
+    background:black;
+
+    box-sizing:border-box;
+    border-radius: 25px;
+    margin: 35px auto;
+    background-image: url("Images/dogs.gif");
+
+}
+
+.megi p{
+    color: black;
+    font-weight:bold;
+    font-style: oblique;
+    text-align: center;
+    padding-top: 52px;
+}
+
+/* ketu fillon blogu */
+
+.title1 {
+    text-align: center;
+    padding: 50px;
+    font-family: 'Square Peg', cursive;
+    border: 1px solid black;
+}
+
+.title1 h2 {
+    font-size: 42px;
+}
+#projects .projects {
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+#projects .projects-header h1 {
+    margin-bottom: 50px;
+}
+#projects .all-projects {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #d8cbcb;
+    padding-top: 100px;
+}
+#projects .project-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    background: #f0f0f0;
+}
+#projects .project-info {
+    padding: 30px;
+    flex-basis: 50%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    /*background-image: black;*/
+    color: black;
+}
+#projects .project-info h1 {
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+#projects .project-info a {
+    font-size: 32px;
+    font-weight: bold;
+    color: black;
+}
+#projects .project-info h2 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-top: 10px;
+    text-align:justify;
+}
+#projects .project-info p {
+    color: black;
+    text-align: justify;
+}
+#projects .project-img {
+    /* flex-basis: 50%;
+    height: 100px; */
+    /* overflow: hidden; */
+    /* position: relative; */
+    
+    
+}
+
+
+
+#projects .iframe{
+    flex-basis: 100%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+
+}
+
+#projects .project-img img {
+    width: 60%;
+}
+
+
+
+ #search-container {
+  margin: 1em 0;
+}
+#search-container input {
+  background-color: transparent;
+  width: 40%;
+  border-bottom: 2px solid #eccfcf;
+  padding: 1em 0.3em;
+}
+#search-container input:focus {
+  border-bottom-color: #b68d8d;
+}
+#search-container button {
+  padding: 1em 2em;
+  margin-left: 1em;
+  background-color: #cfbcbc;
+  color: #ffffff;
+  border-radius: 5px;
+  margin-top: 0.5em;
+}
+ .button-value {
+  border: 2px solid #d8b8b8;
+  padding: 1em 2.2em;
+  border-radius: 3em;
+  background-color: transparent;
+  color: #e3caca;
+  cursor: pointer;
+}
+
+#products {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 1.5em;
+  padding: 2em 0;
+
+}
+
+ .card {
+  background-color: #ffffff;
+  max-width: 18em;
+  margin-top: 1em;
+  padding: 1em;
+  border-radius: 5px;
+  box-shadow: 1em 2em 2.5em rgba(1, 2, 68, 0.08);
+}
+ .image-container {
+  text-align: center;
+}
+
+.container {
+  padding-top: 1em;
+  color: #110f29;
+}
+.container h5 {
+  font-weight: 500;
+}
+.hide {
+  display: none;
+}
+body, h1, h4, p {
+    margin: 0; /* Heq marzhet e paracaktuara për të gjithë elementët për një fillim të pastër */
+    padding: 0; /* Heq padding-un e paracaktuar për të gjithë elementët */
+}
+
+.about-title {
+    margin-bottom: 0; /* Heq hapësirën në fund të about-title */
+}
+
+.container {
+    display: flex;
+    justify-content: center; /* Qendron horizontalisht */
+    align-items: center; /* Qendron vertikalisht */
+    height: 50vh; /* Lartësia e plotë e dritares së shfletuesit */
+}
+
+.centered {
+    text-align: center; /* Qendron gjithashtu tekstin dhe imazhin */
+    border: 4px solid #ccc; /* Opsionale: për ta bërë të dukshëm kufirin e div-it */
+    padding: 10px; /* Opsionale: hapësirë e brendshme */
+}
+
+.maincontent {
+    margin-top: 0; /* Heq hapësirën në krye të maincontent */
+}
+
+.maincontent p {
+    margin-top: 20px; /* Vendos një hapësirë të vogël në krye të paragrafeve në maincontent */
+}
+
+
+

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>PET EXPO</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,300&family=Square+Peg&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<section id="header">
+    <h1>PET EXPO</h1>
+
+    <div>
+        <ul id="navbar">
+            <li><a class="active" href="index.html">Kreu</a></li>
+            <li><a href="about.html">Rreth nesh ❤</a></li>
+            <li><a href="adopt.html">Adopto 🐾</a></li>
+            <li><a href="blog.html">Blog 💻</a></li>
+            <li><a href="contact.html">Kontakto 💌</a></li>
+        </ul>
+    </div>
+</section>
+</body>
+<body>
+<main>
+
+    <div class="contact">
+        <h2>Na kontaktoni!</h2>
+        <h3>Jemi këtu për ti dhënë përgjigje cdo pyetjeje!</h3>
+        <form action="" method="" class="form">
+            <div class="input-group">
+                <input type="text" name="first_name" id="first-name" placeholder="Emri juaj">
+                <label for="first-name">Emri juaj</label>
+            </div>
+
+            <div class="input-group">
+                <input type="text" name="last_name" id="last-name" placeholder="Mbiemri juaj">
+                <label for="last-name">Mbiemri juaj</label>
+            </div>
+
+            <div class="input-group">
+                <input type="email" name="e-mail" id="e-mail" placeholder="Adresa juaj e email">
+                <label for="e-mail">Adresa juaj e email</label>
+            </div>
+
+            <div class="input-group">
+                <input type="number" name="phone-number" id="phone-number" placeholder="Numri juaj i telefonit">
+                <label type="number">Numri juaj i telefonit</label>
+            </div>
+
+            <div class="textarea-group">
+                <textarea name="message" id="message" rows="3" placeholder="Message"></textarea>
+                <label for="message">Mesazhi juaj</label>
+            </div>
+
+            <h5>Zgjidh mikun e ri!</h5>
+            <div class="adopt-group1">
+                <form>
+                    <select name = "dropdown" id="adopt-group">
+                        <option value = "" selected></option>
+                        <option value = "Otis">Otis</option>
+                        <option value = "Luna">Luna</option>
+                        <option value="Koko">Koko</option>
+                        <option value="Jasper">Jasper</option>
+                        <option value="Chloe">Chloe</option>
+                        <option value="Garfield">Garfield</option>
+                        <option value="Bella">Bella</option>
+                        <option value="Milo">Milo</option>
+                        <option value="Simba">Simba</option>
+                        <option value="Tjeter">Tjeter</option>
+                    </select>
+                </form>
+            </div>
+
+
+        </form>
+
+
+        <div>
+            <button ondblclick="myhref()" class="button-contact">Dergoni të dhënat tuaja!</button>
+            <script>
+                function myhref() {
+                    location.href =
+                        "submit.html";
+                }
+            </script>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="row">
+        <div class ="footer-col">
+            <div class="footer-nav">
+                <p>
+                    Made with love by <br>❤ Megi Grenazi ❤
+                </p>
+            </div>
+        </div>
+
+        <div class ="footer-col">
+            <ul class="social-links">
+                <li><a href="https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3BUHly3AwHS2yV7lXiiTGliA%3D%3D"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3BUHly3AwHS2yV7lXiiTGliA%3D%3D"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3BUHly3AwHS2yV7lXiiTGliA%3D%3D"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
